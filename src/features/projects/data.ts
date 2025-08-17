@@ -17,7 +17,7 @@ const projects: Project[] = [
         The website was created using React and TypeScript.
         `,
         pic: portfolio_ss,
-        link: "#"
+        link: "https://github.com/json-chow/portfolio"
     },
     {
         title: "Bootleg GPT",

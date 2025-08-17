@@ -2,9 +2,9 @@ import me_img from "../../assets/me.jpg";
 
 const IntroSection = () => {
     return (
-        <section className="grid grid-cols-4 auto-rows-min mb-6">
-            <div className="col-span-3 pr-8 md:pr-14 lg:pr-20">
-                <h2 className="text-5xl mb-8 font-semibold">
+        <section className="grid grid-cols-1 md:grid-cols-4 auto-rows-min mb-6">
+            <div className="col-span-3 md:pr-14 lg:pr-20">
+                <h2 className="text-5xl mb-8 font-semibold text-center md:text-left">
                     Hello! My name is Jason Chow
                 </h2>
                 <div className="text-xl">
@@ -14,7 +14,7 @@ const IntroSection = () => {
                     Currently incorporating C++ and Typescript into my repertoire.
                 </div>
             </div>
-            <img className="col-span-1 w-fit lg:max-w-75 mx-auto self-center"
+            <img className="col-span-1 max-w-55 lg:max-w-75 mx-auto self-center order-first md:order-last"
                  src={me_img}
                  alt="Icon">
             </img>

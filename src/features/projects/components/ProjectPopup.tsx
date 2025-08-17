@@ -9,7 +9,7 @@ interface ProjectPopupProps {
 
 const ProjectPopup = ({project, onBackClick}: ProjectPopupProps) => {
     return (
-        <div className="fixed inset-0 bg-neutral-700 mx-25 xl:mx-45 my-auto rounded-sm h-fit max-h-svh overflow-auto">
+        <div className="fixed inset-0 bg-neutral-700 md:mx-25 xl:mx-45 my-auto rounded-sm h-fit max-h-svh overflow-auto">
             <div className="flex justify-between p-2">
                 <img className="w-12 cursor-pointer transition ease-out delay-100 hover:scale-125" src={backIcon} alt="Go Back" onClick={onBackClick}></img>
                 <a href={project.link}>
