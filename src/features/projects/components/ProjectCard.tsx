@@ -11,7 +11,7 @@ const ProjectCard = ({project, onClick}: ProjectCardProps) => {
         <div className="rounded-md bg-stone-800 cursor-pointer p-4 flex flex-col transition ease-out delay-100 hover:scale-105" onClick={onClick}>
             <div className="flex justify-between">
                 <div className="text-3xl font-semibold wrap-anywhere">{project.title}</div>
-                <a href={project.link} onClick={(e) => e.stopPropagation()}>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
                     <img className="ml-auto max-w-10 transition ease-out delay-100 hover:scale-120" alt="GH" src={gh_logo}></img>
                 </a>
             </div>

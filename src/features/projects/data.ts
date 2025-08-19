@@ -7,19 +7,6 @@ import puzzlestormtrends_ss from "./assets/puzzlestorm.png";
 
 const projects: Project[] = [
     {
-        title: "Portfolio",
-        desc: "The site you're looking at right now!",
-        stack: ["TypeScript", "React"],
-        longDesc: `\
-        Created to showcase the projects that I've created over the years.\
-        The design is meant to be simple and intuitive, with the important information clearly visible.\
-        Also an excuse for me to learn some TypeScript.\n\n
-        The website was created using React and TypeScript.
-        `,
-        pic: portfolio_ss,
-        link: "https://github.com/json-chow/portfolio"
-    },
-    {
         title: "Bootleg GPT",
         desc: "A bootleg implementation of an autoregressive language model",
         stack: ["Python", "PyTorch"],
@@ -74,6 +61,19 @@ const projects: Project[] = [
         `,
         pic: puzzlestormtrends_ss,
         link: "https://github.com/json-chow/Puzzle-Storm-Trends"
+    },
+    {
+        title: "Portfolio",
+        desc: "The site you're looking at right now!",
+        stack: ["TypeScript", "React"],
+        longDesc: `\
+        Created to showcase the projects that I've created over the years.\
+        The design is meant to be simple and intuitive, with the important information clearly visible.\
+        Also an excuse for me to learn some TypeScript.\n\n
+        The website was created using React and TypeScript.
+        `,
+        pic: portfolio_ss,
+        link: "https://github.com/json-chow/portfolio"
     }
 ];
 
