@@ -8,6 +8,9 @@ interface ProjectPopupProps {
 }
 
 const ProjectPopup = ({project, onBackClick}: ProjectPopupProps) => {
+    project.longDesc = project.longDesc
+                        .replaceAll(/\*\*(.*?)\*\*(?!\*)/g, (_, p1) => `<b>${p1}</b>`)
+                        .replaceAll(/\[(.*)\]\((.*)\)/g, (_, p1, p2) => `<a class="underline text-blue-500 hover:text-blue-700" href="${p2}" target="_blank" rel="noopener noreferrer">${p1}</a>`);
     return (
         <div className="fixed inset-0 bg-neutral-700 md:mx-25 xl:mx-45 my-auto rounded-sm h-fit max-h-svh overflow-auto">
             <div className="flex justify-between p-2">
@@ -21,15 +24,14 @@ const ProjectPopup = ({project, onBackClick}: ProjectPopupProps) => {
                     <div className="text-5xl xl:text-6xl font-semibold wrap-anywhere text-center lg:text-left mb-5">
                         {project.title}
                     </div>
-                    <div className="text-xl xl:text-2xl whitespace-pre-line">
-                        {project.longDesc}
+                    <div 
+                        className="text-xl xl:text-2xl whitespace-pre-line"
+                        dangerouslySetInnerHTML={{__html: project.longDesc}}>
                     </div>
                 </div>
-                <img className="max-w-1/2 self-center" alt="screenshot" src={project.pic}></img>
+                <img className="max-w-1/2 max-h-[75dvh] self-center" alt="screenshot" src={project.pic}></img>
             </div>
-            
         </div>
-        // TODO: more intuitive link to repo?
     )
 }
 
