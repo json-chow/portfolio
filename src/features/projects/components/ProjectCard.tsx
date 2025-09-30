@@ -1,5 +1,6 @@
 import type { Project } from "../types/project";
-import gh_logo from "../../../assets/github-mark-white.svg"
+import gh_logo from "../../../assets/github-mark-white.svg";
+import gd_logo from "../../../assets/icons8-google-drive-48.png";
 
 interface ProjectCardProps {
     project: Project;
@@ -12,7 +13,9 @@ const ProjectCard = ({project, onClick}: ProjectCardProps) => {
             <div className="flex justify-between">
                 <div className="text-3xl font-semibold wrap-anywhere">{project.title}</div>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                    {project.type === "github" ?
                     <img className="ml-auto max-w-10 transition ease-out delay-100 hover:scale-120" alt="GH" src={gh_logo}></img>
+                    : <img className="ml-auto max-w-10 transition ease-out delay-100 hover:scale-120" alt="GD" src={gd_logo}></img>}
                 </a>
             </div>
             <div className="mb-4">

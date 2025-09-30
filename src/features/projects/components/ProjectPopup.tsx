@@ -1,6 +1,7 @@
 import type { Project } from "../types/project";
 import backIcon from "../../../assets/icons8-back-64.png";
 import gh_logo from "../../../assets/github-mark-white.svg";
+import gd_logo from "../../../assets/icons8-google-drive-48.png";
 
 interface ProjectPopupProps {
     project: Project;
@@ -16,7 +17,9 @@ const ProjectPopup = ({project, onBackClick}: ProjectPopupProps) => {
             <div className="flex justify-between p-2">
                 <img className="w-12 cursor-pointer transition ease-out delay-100 hover:scale-125" src={backIcon} alt="Go Back" onClick={onBackClick}></img>
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    {project.type === "github" ?
                     <img className="ml-auto max-w-10" alt="GH" src={gh_logo}></img>
+                    : <img className="ml-auto max-w-10" alt="GD" src={gd_logo}></img>}
                 </a>
             </div>
             <div className="flex flex-col-reverse lg:flex-row px-8 py-3 gap-5 mb-10">

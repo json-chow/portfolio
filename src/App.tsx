@@ -6,7 +6,7 @@ import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   return (
-    <div className="w-3/4 mx-auto">
+    <div className="w-3/4 mx-auto mb-25">
       <Navbar></Navbar>
       <IntroSection></IntroSection>
       <ProjectSection></ProjectSection>

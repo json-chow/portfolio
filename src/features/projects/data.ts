@@ -5,6 +5,7 @@ import mazesolver_ss from "./assets/mazesolver.png";
 import pdftoimage_ss from "./assets/pdftoimage.png";
 import fakestackoverflow_ss from "./assets/fakestackoverflow.png";
 import autoclicker_ss from "./assets/autoclicker.png";
+import lmabilities_ss from "./assets/lmabilities.png";
 import puzzlestormtrends_ss from "./assets/puzzlestorm.png";
 
 const projects: Project[] = [
@@ -12,6 +13,7 @@ const projects: Project[] = [
         title: "Bootleg GPT",
         desc: "A bootleg implementation of an autoregressive language model",
         stack: ["Python", "PyTorch"],
+        type: "github",
         longDesc: `\
         Serves as an educational project to understand the inner workings of the LLMs that we see today.\
         The entire text generation pipeline was implemented, starting from **data preprocessing**, \
@@ -29,12 +31,15 @@ const projects: Project[] = [
         title: "Maze Solver",
         desc: "Implementation of various maze solving algorithms",
         stack: ["Python"],
+        type: "github",
         longDesc: `\
         Solving mazes using classical search algorithms such as **BFS**, **DFS**, and **A***,\
         as well as more novel algorithms such as **IDDFS** and **SMA***.\
         Analyzed algorithm completeness, optimality, and complexity.\n\n
         Each algorithm was implemented and analyzed using **Python**.\
         **Matplotlib** was used for visualizing visited spaces as well as the computed path.\n\n\n
+        [Project Report](https://drive.google.com/file/d/1xl4rHfxso1kzJObn-5LSekXBqtClDsb0/view?usp=sharing)\n
+        [Project Poster](https://drive.google.com/file/d/1QHGoK4SHnKM1leg663NEoVZv58SD5WIP/view?usp=sharing)\n
         [Link to GitHub](https://github.com/json-chow/Maze-Solver)
         `,
         pic: mazesolver_ss,
@@ -44,6 +49,7 @@ const projects: Project[] = [
         title: "pdftoimage",
         desc: "A GUI application written in Python to convert pdf files to images and back",
         stack: ["Python", "PySide6"],
+        type: "github",
         longDesc: `\
         A lightweight Python Qt application to convert to and from PDF files and images.\
         Originally written in PyQt5, but later rewritten in PySide6.\n\n
@@ -60,6 +66,7 @@ const projects: Project[] = [
         title: "FakeStackOverflow",
         desc: "Implementation of a clone of StackOverflow",
         stack: ["JavaScript", "React", "Express", "MongoDB"],
+        type: "github",
         longDesc: `\
         My first project involving JS/React! This is a full stack web app replicating StackOverflow's core functionality, enabling users to post, upvote, downvote, and comment.\
         User profile management and user reputation was implemented to enhance user engagement.\
@@ -74,6 +81,7 @@ const projects: Project[] = [
         title: "Autoclicker",
         desc: "An autoclicker, but with optional random click delay",
         stack: ["Python", "PySide6"],
+        type: "github",
         longDesc: `\
         A Python application that automates mouse clicks or keyboard presses that can be toggled on and off with a hotkey.\
         Can be configured to have a random delay between clicks to simulate human behavior.\
@@ -89,6 +97,7 @@ const projects: Project[] = [
         title: "Puzzle Storm Trends",
         desc: "Visualization of Lichess puzzle storm stats over time",
         stack: ["Python"],
+        type: "github",
         longDesc: `\
         A Python script to visualize trends in Lichess puzzle storm performance.\
         The script creates a bunch of scatter plots visualizing the highest puzzle elo solved, number of correct puzzle moves, \
@@ -100,9 +109,29 @@ const projects: Project[] = [
         link: "https://github.com/json-chow/Puzzle-Storm-Trends"
     },
     {
+        title: "Evaluation of LM Abilities",
+        desc: "Evaluation of recall and state tracking abilities of various language models",
+        stack: ["Python"],
+        type: "drive",
+        longDesc: `\
+        Final project for a graduate NLP course.\n
+        We evaluated the recall and state tracking abilities of various language models, \
+        focusing on **linear attention models** such as **RWKV7** and **DeltaNet**.\
+        We find that on the multi query associative recall task, the recall ability of transformer based models\
+        and state space models depends on the model dimension.\
+        We also find that newer linear attention models such as **S4**, **RWKV7**, and **DeltaNet**\
+        still fail to solve NC1 tasks with constant model depth, requiring monotonically increasing depths.\n\n
+        [Report Link](https://drive.google.com/file/d/1N_kUBU-CvbpdeHNVaMNqFxwKax_29HD_/view?usp=sharing)\n
+        [Poster Link](https://drive.google.com/file/d/17h6IcJkvZvv8lzeemIkU_vBK_BWg_50B/view?usp=sharing)
+        `,
+        pic: lmabilities_ss,
+        link: "https://drive.google.com/file/d/1N_kUBU-CvbpdeHNVaMNqFxwKax_29HD_/view?usp=sharing"
+    },
+    {
         title: "Portfolio",
         desc: "The site you're looking at right now!",
         stack: ["TypeScript", "React"],
+        type: "github",
         longDesc: `\
         Created to showcase the projects that I've created over the years.\
         The design is meant to be simple and intuitive, with the important information clearly visible.\
