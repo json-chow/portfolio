@@ -1,6 +1,6 @@
-import { Link } from '@tanstack/react-router'
-import linkedin_logo from "../../assets/icons8-linkedin.svg"
-import github_logo from "../../assets/github-mark-white.svg"
+import { Link } from "@tanstack/react-router";
+import linkedin_logo from "../../assets/icons8-linkedin.svg";
+import github_logo from "../../assets/github-mark-white.svg";
 
 const Header = () => {
   return (
@@ -14,15 +14,27 @@ const Header = () => {
         </Link>
       </div>
       <div className="flex gap-4">
-        <a href="https://www.linkedin.com/in/jasonchow3000/" target="_blank" rel="noopener noreferrer">
-          <img className="h-10 transition ease-out delay-100 hover:scale-120" src={linkedin_logo} alt="LinkedIn Logo"></img>
+        <a
+          href="https://www.linkedin.com/in/jasonchow3000/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="h-10 transition ease-out delay-100 hover:scale-120"
+            src={linkedin_logo}
+            alt="LinkedIn Logo"
+          ></img>
         </a>
         <a href="https://github.com/json-chow" target="_blank" rel="noopener noreferrer">
-          <img className="h-10 transition ease-out delay-100 hover:scale-120" src={github_logo} alt="GitHub Logo"></img>
+          <img
+            className="h-10 transition ease-out delay-100 hover:scale-120"
+            src={github_logo}
+            alt="GitHub Logo"
+          ></img>
         </a>
       </div>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

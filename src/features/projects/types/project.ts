@@ -6,6 +6,6 @@ interface Project {
   longDesc: string;
   pic: string;
   link: string;
-};
+}
 
 export type { Project };

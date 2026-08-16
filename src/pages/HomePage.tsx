@@ -1,5 +1,5 @@
-import IntroSection from '../features/intro/IntroSection'
-import ProjectSection from '../features/projects/ProjectSection'
+import IntroSection from "../features/intro/IntroSection";
+import ProjectSection from "../features/projects/ProjectSection";
 
 const HomePage = () => {
   return (
@@ -7,7 +7,7 @@ const HomePage = () => {
       <IntroSection />
       <ProjectSection />
     </>
-  )
+  );
 };
 
-export default HomePage
+export default HomePage;

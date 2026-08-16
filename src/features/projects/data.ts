@@ -25,7 +25,7 @@ const projects: Project[] = [
         [Link to GitHub](https://github.com/json-chow/bootleg-gpt)
         `,
     pic: bootleggpt_ss,
-    link: "https://github.com/json-chow/bootleg-gpt"
+    link: "https://github.com/json-chow/bootleg-gpt",
   },
   {
     title: "Maze Solver",
@@ -43,7 +43,7 @@ const projects: Project[] = [
         [Link to GitHub](https://github.com/json-chow/Maze-Solver)
         `,
     pic: mazesolver_ss,
-    link: "https://github.com/json-chow/Maze-Solver"
+    link: "https://github.com/json-chow/Maze-Solver",
   },
   {
     title: "pdftoimage",
@@ -60,7 +60,7 @@ const projects: Project[] = [
         [Link to GitHub](https://github.com/json-chow/pdftoimage)
         `,
     pic: pdftoimage_ss,
-    link: "https://github.com/json-chow/pdftoimage"
+    link: "https://github.com/json-chow/pdftoimage",
   },
   {
     title: "FakeStackOverflow",
@@ -75,7 +75,7 @@ const projects: Project[] = [
         [Link to GitHub](https://github.com/json-chow/FakeStackOverflow)
         `,
     pic: fakestackoverflow_ss,
-    link: "https://github.com/json-chow/FakeStackOverflow"
+    link: "https://github.com/json-chow/FakeStackOverflow",
   },
   {
     title: "Autoclicker",
@@ -91,7 +91,7 @@ const projects: Project[] = [
         [Link to GitHub](https://github.com/json-chow/Autoclicker)
         `,
     pic: autoclicker_ss,
-    link: "https://github.com/json-chow/Autoclicker"
+    link: "https://github.com/json-chow/Autoclicker",
   },
   {
     title: "Puzzle Storm Trends",
@@ -106,7 +106,7 @@ const projects: Project[] = [
         [Link to GitHub](https://github.com/json-chow/Puzzle-Storm-Trends)
         `,
     pic: puzzlestormtrends_ss,
-    link: "https://github.com/json-chow/Puzzle-Storm-Trends"
+    link: "https://github.com/json-chow/Puzzle-Storm-Trends",
   },
   {
     title: "Evaluation of LM Abilities",
@@ -125,7 +125,7 @@ const projects: Project[] = [
         [Poster Link](https://drive.google.com/file/d/17h6IcJkvZvv8lzeemIkU_vBK_BWg_50B/view?usp=sharing)
         `,
     pic: lmabilities_ss,
-    link: "https://drive.google.com/file/d/1N_kUBU-CvbpdeHNVaMNqFxwKax_29HD_/view?usp=sharing"
+    link: "https://drive.google.com/file/d/1N_kUBU-CvbpdeHNVaMNqFxwKax_29HD_/view?usp=sharing",
   },
   {
     title: "Portfolio",
@@ -140,8 +140,8 @@ const projects: Project[] = [
         [Link to GitHub](https://github.com/json-chow/portfolio)
         `,
     pic: portfolio_ss,
-    link: "https://github.com/json-chow/portfolio"
-  }
+    link: "https://github.com/json-chow/portfolio",
+  },
 ];
 
 export { projects };

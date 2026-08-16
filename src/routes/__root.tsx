@@ -1,10 +1,10 @@
-import { createRootRoute, Outlet } from '@tanstack/react-router'
-import Header from '../features/header/Header'
-import { Analytics } from '@vercel/analytics/react'
+import { createRootRoute, Outlet } from "@tanstack/react-router";
+import Header from "../features/header/Header";
+import { Analytics } from "@vercel/analytics/react";
 
 export const Route = createRootRoute({
   component: RootComponent,
-}) 
+});
 
 function RootComponent() {
   return (
@@ -15,5 +15,5 @@ function RootComponent() {
       </main>
       <Analytics />
     </div>
-  )
+  );
 }

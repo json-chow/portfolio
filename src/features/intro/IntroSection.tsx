@@ -8,18 +8,19 @@ const IntroSection = () => {
           Hello! My name is Jason Chow
         </h2>
         <div className="text-xl">
-          Recent graduate from Stony Brook University with an MS in Computer Science.
-          I primarily program in Python, but have used JavaScript and React.js recently.
-          Throughout the years, I've gained an interest in applied ML and NLP.
-          Currently incorporating C++ and Typescript into my repertoire.
+          Recent graduate from Stony Brook University with an MS in Computer Science. I primarily
+          program in Python, but have used JavaScript and React.js recently. Throughout the years,
+          I've gained an interest in applied ML and NLP. Currently incorporating C++ and Typescript
+          into my repertoire.
         </div>
       </div>
-      <img className="col-span-1 max-w-55 lg:max-w-75 mx-auto self-center order-first md:order-last"
+      <img
+        className="col-span-1 max-w-55 lg:max-w-75 mx-auto self-center order-first md:order-last"
         src={me_img}
-        alt="Icon">
-      </img>
+        alt="Icon"
+      ></img>
     </section>
-  )
-}
+  );
+};
 
 export default IntroSection;
