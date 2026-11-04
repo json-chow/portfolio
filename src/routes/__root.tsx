@@ -8,7 +8,7 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <div className="w-3/4 mx-auto mb-25">
+    <div className="w-2/3 mx-auto mb-25">
       <Header />
       <main>
         <Outlet />

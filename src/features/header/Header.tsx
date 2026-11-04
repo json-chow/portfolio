@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import linkedin_logo from "../../assets/icons8-linkedin.svg";
-import github_logo from "../../assets/github-mark-white.svg";
+import linkedinLogo from "../../assets/icons8-linkedin.svg";
+import githubLogo from "../../assets/github-mark-white.svg";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         <Link to="/" className="text-lg font-semibold">
           Jason Chow
         </Link>
-        <Link to="/blog" className="text-lg">
+        <Link to="/blog" className="text-lg" activeProps={{ className: "text-gray-400" }}>
           Blog
         </Link>
       </div>
@@ -21,14 +21,14 @@ const Header = () => {
         >
           <img
             className="h-10 transition ease-out delay-100 hover:scale-120"
-            src={linkedin_logo}
+            src={linkedinLogo}
             alt="LinkedIn Logo"
           ></img>
         </a>
         <a href="https://github.com/json-chow" target="_blank" rel="noopener noreferrer">
           <img
             className="h-10 transition ease-out delay-100 hover:scale-120"
-            src={github_logo}
+            src={githubLogo}
             alt="GitHub Logo"
           ></img>
         </a>

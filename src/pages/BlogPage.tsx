@@ -1,5 +1,11 @@
+import BlogSection from "../features/blog/BlogSection";
+
 const BlogPage = () => {
-  return <section>under construction</section>;
+  return (
+    <>
+      <BlogSection />
+    </>
+  );
 };
 
 export default BlogPage;
