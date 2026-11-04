@@ -17,7 +17,7 @@ const ProjectPopup = ({ project, onBackClick }: ProjectPopupProps) => {
         `<a class="underline text-blue-500 hover:text-blue-700" href="${p2}" target="_blank" rel="noopener noreferrer">${p1}</a>`,
     );
   return (
-    <div className="fixed inset-0 bg-neutral-700 md:mx-25 xl:mx-45 my-auto rounded-sm h-fit max-h-svh overflow-auto">
+    <div className="fixed inset-0 bg-neutral-700 md:mx-25 xl:mx-45 my-auto rounded-sm h-fit max-h-svh overflow-auto scrollbar-none">
       <div className="flex justify-between p-2">
         <img
           className="w-12 cursor-pointer transition ease-out delay-100 hover:scale-125"
