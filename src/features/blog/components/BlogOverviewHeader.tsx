@@ -1,6 +1,6 @@
 import searchIcon from "../../../assets/search-icon.svg";
 
-const BlogSectionHeader = () => {
+const BlogOverviewHeader = () => {
   return (
     <section>
       <div className="border rounded-full w-1/4 m-auto py-1 px-2 flex gap-1.5 items-center">
@@ -11,4 +11,4 @@ const BlogSectionHeader = () => {
   );
 };
 
-export default BlogSectionHeader;
+export default BlogOverviewHeader;

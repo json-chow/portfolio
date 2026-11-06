@@ -9,7 +9,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "fmt": "oxfmt --check",
-    "fmt:fix": "oxfmt"
+    "fmt:fix": "oxfmt",
+    "typecheck": "tsc -b"
   },
   "dependencies": {
     "@11ty/gray-matter": "^3.0.0",
