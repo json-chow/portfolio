@@ -9,7 +9,7 @@ const Header = () => {
         <Link to="/" className="text-lg font-semibold">
           Jason Chow
         </Link>
-        <Link to="/blog" className="text-lg" activeProps={{ className: "text-gray-400" }}>
+        <Link to="/blog" className="text-lg" activeProps={{ className: "text-neutral-400" }}>
           Blog
         </Link>
       </div>
