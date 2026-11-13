@@ -1,13 +1,12 @@
-import BlogOverview from "../features/blog/BlogOverview";
-import { getAllPosts } from "../features/blog/utils";
+import BlogPost from "../features/blog/BlogPost";
+import type { Post } from "../features/blog/types/post";
 
-const BlogPage = () => {
-  const posts = getAllPosts();
-  return (
-    <>
-      <BlogOverview posts={posts} />
-    </>
-  );
+interface BlogPageProps {
+  post: Post;
+}
+
+const BlogPage = ({ post }: BlogPageProps) => {
+  return <BlogPost post={post} />;
 };
 
 export default BlogPage;

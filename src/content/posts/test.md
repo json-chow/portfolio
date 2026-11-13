@@ -1,8 +1,8 @@
 ---
-title: "Test Page"
-date: "2026-08-16"
+title: "Under Construction"
+date: "2026-11-13"
 tags: ["Test", "Test2", "TestLongLongLongTag"]
-summary: "Test page summary"
+summary: "This is a test page to make sure that the blog feature is working"
 ---
 
 # Title
