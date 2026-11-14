@@ -1,3 +1,4 @@
+import BlogPostContent from "./components/BlogPostContent";
 import BlogPostHeader from "./components/BlogPostHeader";
 import type { Post } from "./types/post";
 
@@ -7,9 +8,10 @@ interface BlogPostProps {
 
 const BlogPost = ({ post }: BlogPostProps) => {
   return (
-    <>
+    <section>
       <BlogPostHeader meta={post.meta} />
-    </>
+      <BlogPostContent content={post.content} />
+    </section>
   );
 };
 
